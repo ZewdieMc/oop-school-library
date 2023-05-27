@@ -32,13 +32,13 @@ class App
   end
 
   def create_teacher
-    print 'Age: '
-    age = gets.chomp.to_i
     print 'Name: '
     name = gets.chomp
+    print 'Age: '
+    age = gets.chomp.to_i
     print 'Specialization: '
     specialization = gets.chomp
-    @people << Teacher.new(age, specialization, parent_permission: true, name: name)
+    @people << Teacher.new(age: age, specialization: specialization, name: name)
   end
 
   def create_person
